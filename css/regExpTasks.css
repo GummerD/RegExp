@@ -1,0 +1,16 @@
+body{
+    margin: 150px 600px ;
+    background-image: url(../img/Stars_2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+main{
+    border: 5px inset rgb(241, 233, 233);
+    padding: 5px; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    background-color: azure; 
+    opacity: 0.9;
+}

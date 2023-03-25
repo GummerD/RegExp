@@ -4,13 +4,95 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/indexStyle.css">
         <title>Регулярные выражения</title>
     </head>
-    <body>
-        <div>
-            <p id="output" style="color: red;"></p>
+    <header>
+        <nav>
 
-            <script src="../js/regexp.js"></script>
-        </div>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <div class="title">
+                <h2 class="div-title-h2">
+                    Что такое регулярное выражение.
+                </h2>
+                <p>
+                    Регулярное выражение – способ записи текстовых шаблонов. По
+                    сути, это обычная текстовая строка написанная на специальном
+                    языке, но она не содержит
+                    конкретный набор символов, а задаёт общие правила. Например,
+                    такие:
+                    строка из 5 символов, первый символ Q, последний – цифра.
+                </p>
+            </div>
+            <div class="ref-info">
+                <p>
+                    В JavaScript регулярное выражение можно объявить двумя
+                    способами:
+                </p>
+                <p>
+                    const option1 = new RegExp('pattern'); // Создание через
+                    конструктор <br>
+                    const option2 = /pattern/; // Создание синтаксическим
+                    способом
+                </p>
+                <p>
+                    Вот несколько основных правил языка регулярных выражений:
+                </p>
+                <ul class="ref-info-examples">
+                    <li>/abc/ Идущие подряд символы abc</li>
+                    <li>/[abc]/ Один из символов a, b или c</li>
+                    <li>/[abc]/ Один из символов a, b или c</li>
+                    <li>/[a-z]/ Диапазон символов, идущих подряд в таблице
+                        Unicode</li>
+                    <li>/[^a]/ Исключить символ из поиска</li>
+                    <li>/\b/ Граница слова</li>
+                    <li>/\B/ Не граница слова</li>
+                    <li>/\d/ Цифра</li>
+                    <li>/\D/ Не цифра</li>
+                    <li>/\w/ Латинская буква, цифра или _</li>
+                    <li>/\W/ Не латинская буква, не цифра и не _</li>
+                    <li>/\s/ Пробельный символ</li>
+                    <li>/\S/ Непробельный символ</li>
+                    <li>/a{3}/ Строго 3 символа а подряд</li>
+                    <li>/a{2,4}/ От 2 до 4 символов а подряд</li>
+                    <li>/a+/ 1 и более символов а подряд</li>
+                    <li>/a*/ 0 и более символов а подряд</li>
+                    <li>/a?/ 0 или 1 символ а</li>
+                    <li>/./ Один любой символ, кроме переноса строки</li>
+                </ul>
+
+            </div>
+            <div class="div-title-task">
+                <h2 class="div-title-h2">
+                    Задание №1:
+                </h2>
+                <p class="div-title-task-p">
+                    При помощи регулрных выражений найти разные символы в
+                    строке: <b>ahb acb aeb aeeb adcb axeb aba aca aea abba adca
+                        abea.</b>
+                    Здесь могут помочь следующие правила поиска: <span
+                        class="title-task-p-span">/ . /, / [^a] /, / \а /</span>
+                    , комбинруйте их, повторяйте и легко сможете решить задание.
+                </p>
+            </div>
+            <div class="main-div-form">
+                <form class="main-form" action="" id="main-form-one"></form>
+            </div>
+
+            <div class="link-new-page">
+                <a href="../html/regExpTask_2.html"> Перейти к cледующим
+                    заданиям -></a>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
     </body>
+
+    <script src="../js/renderings/rendMainFormPage.js"></script>
+    <script src="../js/resultInForm/mainPage/getResultOneForm.js"></script>
 </html>

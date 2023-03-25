@@ -1,0 +1,86 @@
+body{
+    margin: 150px 600px ;
+    background-image: url(../img/Stars_1.jpeg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+main{
+    border: 5px inset rgb(241, 233, 233);
+    padding: 5px; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    background-color: azure; 
+    opacity: 0.9;
+}
+
+.title{
+    font-size:large;
+    padding: 10px;
+}
+
+.ref-info{
+    font-size:large;
+    padding: 10px;
+}
+
+/*Задание и его описание.*/
+.div-title-task{
+    font-size:large;
+    padding: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.div-title-h2{
+    text-align: center;
+}
+
+.div-title-p-span {
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+.div-title-task-p{
+    margin-bottom: 0px;
+}
+
+.title-task-p-span{
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+
+/*Форма*/
+.main-div-form{
+    padding: 10px; 
+    padding-top: 0px;
+}
+
+.main-form{
+    background-color: rgb(232, 234, 226);
+    
+}
+
+.main-form-h-ex{
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+
+.main-form-div-p-out{
+    color: rgb(2, 2, 2);
+    font-size: medium;
+}   
+
+/* Ссылка на следующую страницу */
+.link-new-page{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    margin-bottom: 15px;
+}
+
+footer{
+    height: 250px;
+}
