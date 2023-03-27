@@ -1,14 +1,16 @@
 let strs = [
-    [
-        'ahb acb aeb aaaab caeeb adcb axeb bbbba aba aca aea xxyxx abba adca abea',
-    ],
+
+    'ahb acb aeb aaaab caeeb adcb axeb bbbba aba aca aea xxyxx abba adca abea',
+
 ];
+
+document.getElementById('str').innerHTML = strs[0];
 
 let exercises = [
     [
-        `1.Дана строка: <span class ="main-form-h-ex">${strs[0][0]}</span>. Составтье выражение, которое найдет ahb, acb, aeb, aab, abb по шаблону: буква 'a', любой символ, буква 'b'`,
-        `2.Дана строка: <span class ="main-form-h-ex">${strs[0][0]}</span>. Составтье выражение, которое найдет aaaa, abba, adca, abea, по шаблону: буква 'a', 2 любых символа, буква 'a'`,
-        `3.Дана строка: <span class ="main-form-h-ex">${strs[0][0]}</span>. Составтье выражение, которое найдет abba и abea, не захватив adca.`,
+        `1.Дана строка: <span class ="main-form-h-ex">${strs[0]}</span>. Составтье выражение, которое найдет ahb, acb, aeb, aab, abb по шаблону: буква 'a', любой символ, буква 'b'`,
+        `2.Дана строка: <span class ="main-form-h-ex">${strs[0]}</span>. Составтье выражение, которое найдет aaaa, abba, adca, abea, по шаблону: буква 'a', 2 любых символа, буква 'a'`,
+        `3.Дана строка: <span class ="main-form-h-ex">${strs[0]}</span>. Составтье выражение, которое найдет abba и abea, не захватив adca.`,
     ],
 ];
 

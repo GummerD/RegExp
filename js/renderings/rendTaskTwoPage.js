@@ -1,20 +1,24 @@
 let strs = [
-    [
-        'ahb acb aeb aaaab caeeb adcb axeb bbbba aba aca aea xxyxx abba adca abea',
-        'buuu ahb aba aca addda abba acc aeb aeeb adcb adca abbba abea'
-    ]
+
+    'ahb acb aeb aaaab caeeb adcb axeb bbbba aba aca aea xxyxx abba adca abea',
+    'buuu abab ahb aba aca addda abba acc xxyxx aa aeb aeeb ababab adcb adca abbba abea'
+
 ];
+
+document.getElementById('str').innerHTML = strs[1];
 
 let exercises = [
     [
-        `1.Дана строка: <span class ="main-form-h-ex">${strs[0][0]}</span>. Составтье выражение, которое найдет ahb, acb, aeb, aab, abb по шаблону: буква 'a', любой символ, буква 'b'`,
-        `2.Дана строка: <span class ="main-form-h-ex">${strs[0][0]}</span>. Составтье выражение, которое найдет aaaa, abba, adca, abea, по шаблону: буква 'a', 2 любых символа, буква 'a'`,
-        `3.Дана строка: <span class ="main-form-h-ex">${strs[0][0]}</span>. Составтье выражение, которое найдет abba и abea, не захватив adca.`
+        `1.Дана строка: <span class ="main-form-h-ex">${strs[0]}</span>. Составтье выражение, которое найдет ahb, acb, aeb, aab, abb по шаблону: буква 'a', любой символ, буква 'b'`,
+        `2.Дана строка: <span class ="main-form-h-ex">${strs[0]}</span>. Составтье выражение, которое найдет aaaa, abba, adca, abea, по шаблону: буква 'a', 2 любых символа, буква 'a'`,
+        `3.Дана строка: <span class ="main-form-h-ex">${strs[0]}</span>. Составтье выражение, которое найдет abba и abea, не захватив adca.`
     ],
     [
-        `1.Дана строка: <span class ="main-form-h-ex">${strs[0][1]}</span>. Составтье выражение, которое найдет aba, abba, abbba по шаблону: буква 'a', буква 'b' любое количество раз, буква 'a'.`,
-        `2.Дана строка: <span class ="main-form-h-ex">${strs[0][1]}</span>. Составтье выражение, которое найдет abba adca abea по шаблону: буква 'a', 2 любых символа, буква 'a'`,
-        `3.Дана строка: <span class ="main-form-h-ex">${strs[0][1]}</span>. Составтье выражение, которое найдет abba и abea, не захватив adca.`
+        `1.Дана строка: <span class ="main-form-h-ex">${strs[1]}</span>. Составтье выражение, которое найдет aba, abba, abbba по шаблону: буква 'a', буква 'b' любое количество раз, буква 'a'.`,
+        `2.Дана строка: <span class ="main-form-h-ex">${strs[1]}</span>. Составтье выражение, которое найдет аа, aba, abba, abbba по шаблону: буква 'a', буква 'b' любое количество раз (в том числе ниодного раза), буква 'a'`,
+        `3.Дана строка: <span class ="main-form-h-ex">${strs[1]}</span>. Составтье выражение, которое найдет aa, aba по шаблону: буква 'a', буква 'b' один раз или ниодного, буква 'a'.`,
+        `4.Дана строка: <span class ="main-form-h-ex">${strs[1]}</span>. Составтье выражение, которая найдет строку xxyxx не захватив.`,
+        `5.Дана строка: <span class ="main-form-h-ex">${strs[1]}</span>. Составтье выражение, которая найдет ab один или несколько раз.`
     ],
 ];
 

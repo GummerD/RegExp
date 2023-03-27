@@ -14,3 +14,64 @@ main{
     background-color: azure; 
     opacity: 0.9;
 }
+
+
+/* Справочная информация */
+.ref-info{
+    font-size:large;
+    padding: 10px;
+}
+
+/*Задание и его описание.*/
+.div-title-task{
+    font-size:large;
+    padding: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.div-title-h2{
+    text-align: center;
+}
+
+.div-title-p-span {
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+.div-title-task-p{
+    margin-bottom: 0px;
+}
+
+.title-task-p-span{
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+/*Форма*/
+.main-div-form{
+    padding: 10px; 
+    padding-top: 0px;
+}
+
+.main-form{
+    background-color: rgb(232, 234, 226);
+    
+}
+
+.main-form-h-ex{
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+/* Ссылка на следующую страницу */
+.link-new-page{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    margin-bottom: 15px;
+}
+
+/* Подвал */
+footer{
+    height: 250px;
+}

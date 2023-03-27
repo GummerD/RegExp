@@ -11,7 +11,7 @@
         <main>
             <div class="ref-info">
                 <p>
-                    Правила, которые помогут выполнить задания:
+                    Шаблоны правил для выполнения заданий:
                 </p>
                 <ul class="ref-info-examples">
                     <li>/abc/ Идущие подряд символы abc</li>
@@ -34,6 +34,7 @@
                     <li>/a*/ 0 и более символов а подряд</li>
                     <li>/a?/ 0 или 1 символ а</li>
                     <li>/./ Один любой символ, кроме переноса строки</li>
+                    <li>/(abс)+/ одноврменный поиск нескольких символов подряд </li>
                 </ul>
 
             </div>
@@ -43,8 +44,7 @@
                 </h2>
                 <p class="div-title-task-p">
                     При помощи регулрных выражений найти разные символы в
-                    строке: <b> buuu ahb aba aca addda abba acc aeb aeeb adcb
-                        adca abbba abea.</b>
+                    строке: <b id="str"></b>.
                     Здесь могут помочь следующие правила поиска: <span
                         class="title-task-p-span">/ + /, / [*] /, / ? /</span>.
                     Как и раньше старайтесь комбинтровать их, повторять,
@@ -61,6 +61,9 @@
             </div>
         </main>
     </body>
+    <footer>
+        
+    </footer>
     <script src="../js/renderings/rendTaskTwoPage.js"></script>
     <script src="../js/resultInForm/twoPage/getResultTwoForm.js"></script>
 </html>

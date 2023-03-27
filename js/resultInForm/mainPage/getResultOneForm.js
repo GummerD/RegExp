@@ -1,12 +1,12 @@
 
 let form = document.querySelector('form');
-//let form = document.getElementById('main-form-one');
-//console.log(form);
-//form.addEventListener('submit', getResult(arrRegExps, strs, formData));
+
 form.addEventListener('submit', getResultOneForm);
 
 function getResultOneForm(event) {
     event.preventDefault();
+
+    let str = document.getElementById('str').innerHTML;
 
     let arrRegExps = [
         ['a.b', 'a\\wb'],
@@ -14,8 +14,6 @@ function getResultOneForm(event) {
         ['ab.a', 'ab\\wa', 'a[^d].a', 'a[^d]\\wa']
     ];
 
-    let str = 'ahb acb aeb aaaab caeeb adcb axeb bbbba aba aca aea xxyxx abba adca abea';
-    
     let el = document.getElementById('main-form-one');
     let input_0 = el.input_0.value;
     let input_1 = el.input_1.value;
@@ -27,9 +25,9 @@ function getResultOneForm(event) {
         let newRegExp = new RegExp(input_0, 'g');
         console.log(newRegExp);
         let strOutPut_0 = str.match(newRegExp);
-        strOutPut_0 = strOutPut_0.join(' ');
+        strOutPut_0 = strOutPut_0.join(', ');
         document.getElementById('output_0').innerHTML = `
-            Ваш вариант регулярного выражения - /${input_0}/, подходит, результат поиска: ${strOutPut_0}
+            Ваш вариант регулярного выражения - /${input_0}/ верен, результат поиска: ${strOutPut_0}
         `;
         
         el.input_0.value = ' ';
@@ -40,9 +38,9 @@ function getResultOneForm(event) {
         let newRegExp = new RegExp(input_1, 'g');
         console.log(newRegExp);
         let strOutPut_1 = str.match(newRegExp);
-        strOutPut_1 = strOutPut_1.join(' ');
+        strOutPut_1 = strOutPut_1.join(', ');
         document.getElementById('output_1').innerHTML += `
-            Ваш вариант регулярного выражения - /${input_1}/, подходит, результат поиска: ${strOutPut_1}
+            Ваш вариант регулярного выражения - /${input_1}/ верен, результат поиска: ${strOutPut_1}
         `;
 
         el.input_1.value = ' ';
@@ -53,9 +51,9 @@ function getResultOneForm(event) {
         let newRegExp = new RegExp(input_2, 'g');
         console.log(newRegExp);
         let strOutPut_2 = str.match(newRegExp);
-        strOutPut_2 = strOutPut_2.join(' ');
+        strOutPut_2 = strOutPut_2.join(', ');
         document.getElementById('output_2').innerHTML += `
-            Ваш вариант регулярного выражения - /${input_2}/, подходит, результат поиска: ${strOutPut_2}
+            Ваш вариант регулярного выражения - /${input_2}/ верен, результат поиска: ${strOutPut_2}
         `;
 
         el.input_2.value = ' ';
